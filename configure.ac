@@ -37,7 +37,6 @@ AC_TYPE_UINT8_T
 AC_FUNC_MALLOC
 
 AC_CONFIG_FILES(
-	src/Makefile
 	Makefile
 )
 
