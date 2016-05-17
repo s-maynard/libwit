@@ -1,0 +1,24 @@
+libwit:
+library to access Netlink info from the kernel via libnl-3 and libnl-genl-3
+through simple 'c' APIs
+
+
+To clean:
+make clean
+   or
+git clean -dxf
+
+
+To build:
+./autogen.sh prefix=/usr
+make
+sudo make install
+
+
+Output:
+/usr/lib/libwit.so
+/usr/include/libwit.h
+
+
+Usage:
+-lwit
