@@ -9,4 +9,4 @@ libwit_la_include_HEADERS= \
 	src/libwit.h
 libwit_la_DEPENDENCIES=
 
-libwit_la_LIBADD=$(libwit_la_DEPENDENCIES) \
+libwit_la_LIBADD=$(libwit_la_DEPENDENCIES)
