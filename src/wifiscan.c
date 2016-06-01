@@ -365,6 +365,10 @@ scan_complete_cb(struct nl_msg *msg, void *arg)
             ap->channel.signal = nla_get_u8(bss[NL80211_BSS_SIGNAL_UNSPEC]);
             LOG(INFO,"signal: %d", ap->channel.signal);
         }
+        if (bss[NL80211_BSS_SIGNAL_MBM]) {
+            ap->channel.signal = nla_get_u32(bss[NL80211_BSS_SIGNAL_MBM]);
+            LOG(INFO,"signal: %d", ap->channel.signal);
+        }
         if (bss[NL80211_BSS_SEEN_MS_AGO]) {
             ap->last_seen = nla_get_u32(bss[NL80211_BSS_SEEN_MS_AGO]);
             LOG(INFO,"last seen: %d", ap->last_seen);
